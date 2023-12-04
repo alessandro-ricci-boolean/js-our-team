@@ -36,4 +36,7 @@ let team = [
         "foto" : "barbara-ramos-graphic-designer.jpg",
     }
 ]
-console.log(team)
+for (let i = 0; i < team.length; i++) {
+    console.log(personale[i].nome)
+    
+}
