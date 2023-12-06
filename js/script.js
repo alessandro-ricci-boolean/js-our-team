@@ -30,9 +30,20 @@ let team = [
         image : "barbara-ramos-graphic-designer.jpg",
     }
 ]
+const cards = document.getElementById("cards");
 for (let i = 0; i < team.length; i++) {
     let member = team[i];
     console.log(member.name);
     console.log(member.role);
     console.log(member.image);
+}
+
+for(let i=0; i<team.length; i++){
+    let member = team[i];
+
+    const col = document.createElement("div");
+    col.classList.add("col-4");
+    let text = `<h2>${member.name}</h2><p>${member.role}</p>${member.image}`;
+    col.innerHTML = text;
+    cards.appendChild(col);
 }
