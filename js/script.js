@@ -31,6 +31,8 @@ let team = [
     }
 ]
 for (let i = 0; i < team.length; i++) {
-    console.log(personale[i].nome)
-    
+    let member = team[i];
+    console.log(member.name);
+    console.log(member.role);
+    console.log(member.image);
 }
